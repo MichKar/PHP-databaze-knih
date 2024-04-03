@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* barvičky 
+tyrkys: #8CB9BD 
+bílá : #FEFBF6
+žlutá: #ECB159
+hnědá: #B67352
+*/
+
+html, input, textarea, button {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HLAVIČKA, PATIČKA  */
+header, footer {
+    background-color: #8CB9BD;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #FEFBF6;
+}
+
+header h1 a {
+    color: #FEFBF6;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* SEKCE MAIN */
+main {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* boční navigace */
+.navigation {
+    background-color: #B67352;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 200px;
+    margin-right: -190px;
+    transition: margin-right 2s;
+}
+
+.menu > li {
+    list-style-type: none;
+    padding: 22px 0px;
+    text-align: center;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: #FEFBF6;
+    padding: 22px 50px;
+}
+
+.menu >li:hover, .menu>li>a:hover, .menu >li:active {
+    color: black;
+    background-color: #ECB159;
+}
+
+/* hlavní sekce */
+.main-section {
+    float: right;
+    flex-grow: 2;
+    background: radial-gradient(rgba(0, 0, 0, 0.173),rgba(0, 0, 0, 0.342)), url(../knihy.jpg);
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.intro {
+    padding-top: 100px;
+    color: white;
+    max-width: 410px; 
+    line-height: 40px;
+}
+
+.btn {
+    padding: 15px 10px;
+    width: 195px;
+    cursor: pointer;
+    background-color: #ECB159;
+    border: 1px solid white;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    margin-top: 40px;
+    user-select: none;
+    
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-add {
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 10px;
+}
+.btn-add:hover, .btn-list:hover {
+    background-color: #b6735295;
+    color: black;
+}
+
+.result {
+    background-color: rgb(252, 238, 219);
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 400px;
+}
+
+/* tabulky */
+.table-review {
+    margin: 0 auto;
+    max-width: 900px;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+caption {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    padding-top: 50px;
+    font-size:x-large;
+}
+
+.table-review, td, th, thead, tbody {
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 12px;
+    border-spacing: 0;
+    border-left: .4px solid #aaaaaa48;
+    border-top: .4px solid #aaaaaa48;
+    border-bottom: .4px solid #52525238;
+    border-right: .4px solid #52525238;
+    
+}
+
+.table-review {
+    padding: 0;
+    border: 0;
+  
+  }
+th {
+    background-color: #ECB159;
+}
+.table-review tbody tr:nth-child(odd) td {
+background-color:rgb(252, 238, 219);
+}
+
+.table-review th:last-child {
+    border-top-right-radius: 10px;
+}
+.table-review th:first-child {
+    border-top-left-radius: 10px;
+}
+.table-review tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+.table-review tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+
+
+/* část hledání a vložení knihy */
+.finding,
+.adding {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.finding h2,
+.adding h2 {
+    max-width: 300px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+}
+.form-add p {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    color: white;
+}
+.form-find input, .form-add input , .form-add textarea, .form-find textarea {
+    width: 300px;
+    padding: 10px 15px;
+    border-radius: 10px;
+   margin-top: 15px;
+   outline: none;
+   border-left: 1px solid #aaaaaa;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #525252;
+   border-right: 1px solid #525252;
+}
+
+.btn:hover {
+    background-color: #B67352;
+}
